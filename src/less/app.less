@@ -121,6 +121,14 @@ body {
   }
 }
 
+
+.gray-button {
+  color: #868484;
+  border-radius: 0;
+  border: solid 4px #868484;
+  font-size: 18px;
+}
+
 #landing-page {
   .after-header {
     margin-top: 30px;
@@ -206,13 +214,6 @@ body {
       text-align: center;
       margin-top:37px;
       margin-bottom:57px;
-
-      .btn {
-        color: #868484;
-        border-radius: 0;
-        border: solid 4px #868484;
-        font-size: 18px;
-      }
     }
 
     .gallery-picture {
@@ -275,7 +276,7 @@ body {
     border: solid 2px #868484;
     padding: 30px 45px;
     width: 75%;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 
     h2 {
       text-transform: uppercase;
@@ -288,5 +289,231 @@ body {
       background-repeat: no-repeat;
       background-position: center left, center right;
     }
+  }
+
+  .specialists {
+    .row > div {
+      height: 201px;
+      display: table;
+      text-align: center;
+
+      .aligner {
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+
+    .mos {
+      background-color: #83d1eb;
+      font-size: 60px;
+      color: #fff;
+      line-height: 1;
+
+      .aligner {
+        text-align: left;
+        padding-left: 50px;
+      }
+    }
+
+    .doc {
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    div.video {
+      background: #a14a2e url('/img/video.png') no-repeat;
+      background-size: 100%;
+      height: 338px;
+    }
+
+    div.learn-how {
+      height: 338px;
+      background-color: #fdc847;
+      color: #fff;
+
+      h2 {
+        font-size: 39px;
+        margin-top: 0;
+      }
+      p {
+        font-family: sans-serif;
+        font-weight: 200;
+      }
+      .icon-ball {
+        height: 31px;
+        width: 30px;
+        background: url('/img/icon-ball.png');
+        margin: 0 auto;
+      }
+
+    }
+
+    .therapies {
+      background-color: #fa6767;
+
+      ul {
+        margin-top: 33px;
+        list-style-type: none;
+
+        li {
+          display: inline-block;
+          color: #fff;
+          margin-right: 50px;
+          line-height: 50px;
+        }
+      }
+    }
+  }
+
+  .community {
+    h2 {
+      font-size: 36px;
+      margin-top: 60px;
+      margin-bottom: 45px;
+      color: #868484;
+      text-align: center;
+    }
+
+    .guide-me {
+      background: transparent url('/img/girl-with-ipad.png') no-repeat;
+      background-size: 100%;
+      height: 200px;
+      color: #fff;
+      display: table;
+
+      span {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 40px;
+        text-align: center;
+        line-height: 1.5;
+        font-size: 18px;
+      }
+    }
+
+    .mh, .ph {
+      font-size: 18px;
+      height: 100px;
+      color: #fff;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    .ph {
+      background-color: #fa6767;
+    }
+
+    .mh {
+      background-color: #80d9f6;
+    }
+
+    .quote {
+      vertical-align: top;
+
+      .cite, .author {
+        width: 50%;
+        height: 200px;
+      }
+
+      .cite {
+        float: left;
+        background: #b5e08c;
+        color: #fff;
+        font-style: italic;
+        font-size: 18px;
+        padding: 30px 16px 0;
+      }
+
+      .author {
+        background: url('/img/girl-with-hand.png') no-repeat center center;
+        background-size: 100%;
+        float: right;
+        position: relative;
+
+        p {
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          right: 10px;
+          color: #fff;
+          font-weight: lighter;
+          margin: 0;
+        }
+      }
+
+      .forums, .blogs {
+        display: block;
+        height: 200px;
+        width: 50%;
+        background-color: #65e2de;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        padding-top: 60px;
+      }
+
+      .forums {
+        float: left;
+      }
+
+      .blogs {
+        float: right;
+      }
+
+    }
+
+    .consult {
+      .girl {
+        height: 200px;
+        background: url('/img/girl-with-notebook.png') no-repeat center center;
+        background-size: 100%;
+      }
+
+      .find-whos-online {
+        height: 200px;
+        background-color: #fdc847;
+        font-size: 24px;
+        color: #fff;
+        text-align: center;
+        padding: 25px 45px 0 45px;
+
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .take-me-up {
+    margin: 30px 0;
+    text-align: center;
+  }
+}
+
+footer {
+  background-color: #373737;
+  font-weight: lighter;
+  padding: 45px 0;
+
+  ul {
+    list-style-type: none;
+    padding: 15px 0 0 0;
+
+    li {
+      display: inline-block;
+      margin-right: 40px;
+
+      a {
+        color: #fff;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .disclaimer {
+    margin-top: 20px;
+    font-size: 8px;
+    line-height: 2.25;
+    color: #fff;
   }
 }
