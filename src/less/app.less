@@ -124,57 +124,7 @@ body {
   }
 }
 
-@media (max-width: 768px){
-  .header {
-    height: auto;
 
-    h1 {
-      font-size: 15vw;
-      margin-top: 10vw;
-    }
-
-    h2 {
-      font-size: 5.5vw;
-    }
-
-    .slogan {
-      font-size: 2.8vw;
-    }
-
-    form.treat-form {
-      position: static;
-      display: flex;
-      flex-direction: row;
-
-      input {
-        width: auto;
-        flex-grow: 1;
-        margin-right: 5px;
-      }
-
-    }
-  }
-}
-
-@media (max-width: 590px){
-  .header {
-    nav {
-      #logo {
-        float: none;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      ul#menu {
-        float: none;
-        text-align: center;
-      }
-
-      h1 {}
-    }
-  }
-}
 
 .gray-button {
   color: #868484;
@@ -348,12 +298,12 @@ body {
   .specialists {
     .row > div {
       height: 201px;
-      display: table;
+      display: flex;
+      align-items: center;
       text-align: center;
+      justify-content: center;
 
       .aligner {
-        display: table-cell;
-        vertical-align: middle;
       }
     }
 
@@ -433,11 +383,11 @@ body {
       background-size: 100%;
       height: 200px;
       color: #fff;
-      display: table;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       span {
-        display: table-cell;
-        vertical-align: middle;
         padding: 40px;
         text-align: center;
         line-height: 1.5;
@@ -541,6 +491,68 @@ body {
   .take-me-up {
     margin: 30px 0;
     text-align: center;
+  }
+}
+
+@media (max-width: 590px){
+  .header {
+    nav {
+      #logo {
+        float: none;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul#menu {
+        float: none;
+        text-align: center;
+      }
+
+      h1 {}
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .header {
+    height: auto;
+
+    h1 {
+      font-size: 15vw;
+      margin-top: 10vw;
+    }
+
+    h2 {
+      font-size: 5.5vw;
+    }
+
+    .slogan {
+      font-size: 2.8vw;
+    }
+
+    form.treat-form {
+      position: static;
+      display: flex;
+      flex-direction: row;
+
+      input {
+        width: auto;
+        flex-grow: 1;
+        margin-right: 5px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 992px){
+  #landing-page .why-holiadvice {
+    width: auto;
+
+    h2 {
+      background: transparent;
+    }
   }
 }
 
