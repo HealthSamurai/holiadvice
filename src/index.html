@@ -46,72 +46,81 @@
       </form>
     </div>
 
-    <div id="wizard" ng-if="wizardActivated">
+    <div id="wizard" ng-if="wizardStep">
       <div class="shadow">
-        <div class="popup">
-          <button type="button" class="close" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="popup" ng-switch="wizardStep">
+            <button type="button" class="close" aria-label="Close" ng-click="closeWizard()">
+              <span aria-hidden="true">&times;</span>
+            </button>
 
-          <h2>HoliAdvice</h2>
-          <p>
-            We know how it is, sometimes you just can’t exactly say what's
-            bothering you or there is too many experts. Who do I need to
-            consult with? Or what is the best integrative method for me. For
-            that and for a lot more we created a system perfectly designed to
-            answer all of those questions. Open your mind you are about to be
-            amazed.
-          </p>
+          <div class="step1" ng-switch-when="1">
 
-          <div class="form-wrapper">
-            <div class="pull-right">
-              <img src="img/girl-with-notebook.png" alt="Notebook girl" width="283" height="203">
-            </div>
+            <h2>HoliAdvice</h2>
+            <p>
+              We know how it is, sometimes you just can’t exactly say what's
+              bothering you or there is too many experts. Who do I need to
+              consult with? Or what is the best integrative method for me. For
+              that and for a lot more we created a system perfectly designed to
+              answer all of those questions. Open your mind you are about to be
+              amazed.
+            </p>
 
-            <div class="form-left">
-              <h3>Personal details</h3>
-              <form class="form-horizontal" action="">
+            <div class="form-wrapper">
+              <div class="pull-right">
+                <img src="img/girl-with-notebook.png" alt="Notebook girl" width="283" height="203">
+              </div>
 
-                <div class="form-group">
-                  <label class="col-sm-4 control-label">Full Name</label>
-                  <div class="col-sm-8">
-                    <input class="form-control" type="text">
-                  </div>
-                </div>
+              <div class="form-left">
+                <h3>Personal details</h3>
+                <form class="form-horizontal" action="">
 
-                <div class="form-group">
-                  <label class="col-sm-4 control-label">Family Status</label>
-                  <div class="col-sm-8">
-                    <div ng-model="famstatus" fs-select="" items="famstatuses">
-                      {{ item }}
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Full Name</label>
+                    <div class="col-sm-8">
+                      <input class="form-control" type="text">
                     </div>
                   </div>
-                </div>
 
-                <div class="form-group">
-                  <label class="col-sm-4 control-label">Date of birth</label>
-                  <div class="col-sm-8">
-                    <div ng-model="dob" fs-date=""></div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label class="col-sm-4 control-label">Profession</label>
-                  <div class="col-sm-8">
-                    <div ng-model="profession" fs-select="" items="professions">
-                      {{ item }}
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Family Status</label>
+                    <div class="col-sm-8">
+                      <div ng-model="famstatus" fs-select="" items="famstatuses">
+                        {{ item }}
+                      </div>
                     </div>
                   </div>
-                </div>
 
-              </form>
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Date of birth</label>
+                    <div class="col-sm-8">
+                      <div ng-model="dob" fs-date=""></div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-sm-4 control-label">Profession</label>
+                    <div class="col-sm-8">
+                      <div ng-model="profession" fs-select="" items="professions">
+                        {{ item }}
+                      </div>
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+
             </div>
+
 
           </div>
 
+          <div class="step2" ng-switch-when="2">
+            Hello World
+          </div>
+
           <div class="dots">
-            <a href="#" class="active"></a>
-            <a href="#"></a>
+            <a href="#" ng-click="wizardGoto(1)" ng-class="{active: wizardStep == 1}"></a>
+            <a href="#" ng-click="wizardGoto(2)" ng-class="{active: wizardStep == 2}"></a>
             <a href="#"></a>
             <a href="#"></a>
             <a href="#"></a>
