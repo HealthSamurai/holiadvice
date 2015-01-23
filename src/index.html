@@ -105,32 +105,62 @@
                       </div>
                     </div>
                   </div>
-
                 </form>
               </div>
-
             </div>
-
-
           </div>
 
           <div class="step2" ng-switch-when="2">
             <img src="img/wizard-step2.jpg" alt="Wizard Step 2">
             <h3>Reason of addressing</h3>
             <div class="button-wrapper">
-              <button class="btn btn-info btn-lg">Body</button>
-              <button class="btn btn-info btn-lg">Mental</button>
-              <button class="btn btn-info btn-lg">Thoughts</button>
-              <button class="btn btn-info btn-lg">Spirit</button>
+              <button class="btn btn-info btn-lg" ng-click="wizardGoto(3)">
+                Body
+              </button>
+              <button class="btn btn-info btn-lg" ng-click="wizardGoto(3)">
+                Mental
+              </button>
+              <button class="btn btn-info btn-lg" ng-click="wizardGoto(3)">
+                Thoughts
+              </button>
+              <button class="btn btn-info btn-lg" ng-click="wizardGoto(3)">
+                Spirit
+              </button>
+            </div>
+          </div>
+
+          <div class="step3" ng-switch-when="3">
+            <h3>Specialists suitable for you:</h3>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="img/wizard-step3-1.png" width="222" height="111" alt="Doc"  class="doc" />
+                  <br />
+                  Rating:
+                  <img src="img/wizard-step3-rating.png" width="72" height="13" alt=""  /> (161)
+                </div>
+                <div class="col-md-4">
+                  <img src="img/wizard-step3-2.png" width="222" height="111" alt="Doc"  class="doc" />
+                  <br />
+                  Rating:
+                  <img src="img/wizard-step3-rating.png" width="72" height="13" alt=""  /> (612)
+                </div>
+                <div class="col-md-4">
+                  <img src="img/wizard-step3-3.png" width="222" height="111" alt="Doc"  class="doc" />
+                  <br />
+                  Rating:
+                  <img src="img/wizard-step3-rating.png" width="72" height="13" alt="" /> (713)
+                </div>
+              </div>
             </div>
           </div>
 
           <div class="dots">
             <a href="#" ng-click="wizardGoto(1)" ng-class="{active: wizardStep == 1}"></a>
             <a href="#" ng-click="wizardGoto(2)" ng-class="{active: wizardStep == 2}"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a href="#" ng-click="wizardGoto(3)"></a>
+            <a href="#" ng-click="wizardGoto(3)"></a>
+            <a href="#" ng-click="wizardGoto(3)" ng-class="{active: wizardStep == 3}"></a>
           </div>
 
         </div>
