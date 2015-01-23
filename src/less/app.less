@@ -514,8 +514,14 @@ body {
   .popup {
     background: #fff;
     width: 770px;
-    height: 410px;
     padding: 30px;
+
+    .close {
+      span {
+        font-size: 36px;
+        color: #373737;
+      }
+    }
 
     h2 {
       text-align: center;
@@ -527,6 +533,11 @@ body {
       margin-right: auto;
       background: url('img/icon-lotus-cross.png') no-repeat top right;
       width: 420px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1.5;
     }
 
     .form-wrapper {
@@ -551,6 +562,24 @@ body {
         }
       }
 
+    }
+
+    .dots {
+      text-align: center;
+      margin-top: 20px;
+
+      a {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #878787;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      a.active {
+        background: #fa6767;
+      }
     }
   }
 }
