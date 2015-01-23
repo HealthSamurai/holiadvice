@@ -7,6 +7,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
     grunt.initConfig({
         coffee: {
@@ -29,6 +30,15 @@ module.exports = function (grunt) {
                     ext: '.css'
                 }]
             }
+        },
+        autoprefixer: {
+          development: {
+            browsers: ['last 2 version', 'ie 9'],
+            expand: true,
+            flatten: true,
+            src: 'build/*.css',
+            dest: 'build'
+          }
         },
         copy: {
             fonts: {
@@ -77,5 +87,5 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('build', ['clean', 'copy', 'coffee', 'less']);
+    grunt.registerTask('build', ['clean', 'copy', 'coffee', 'less', 'autoprefixer']);
 };
