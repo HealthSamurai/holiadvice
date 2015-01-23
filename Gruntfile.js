@@ -47,6 +47,12 @@ module.exports = function (grunt) {
                 src: '*',
                 dest: 'build/fonts/'
             },
+            formstamp: {
+                cwd: 'bower_components/angular-formstamp/',
+                expand: true,
+                src: ['*.js', '*.css'],
+                dest: 'build'
+            },
             fonts2: {
                 cwd: 'src/fonts/',
                 expand: true,
