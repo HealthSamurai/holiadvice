@@ -35,11 +35,13 @@ body {
       background-image: url('img/logo.png');
       width: 223px;
       height: 23px;
+      float: left;
     }
 
     ul#menu {
       margin: 0;
       padding: 0;
+      float: right;
 
       li {
         list-style-type: none;
@@ -93,6 +95,7 @@ body {
 
   .slogan {
     margin: 0 auto;
+    margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.3);
     color: #fff;
     width: 310px;
@@ -121,6 +124,57 @@ body {
   }
 }
 
+@media (max-width: 768px){
+  .header {
+    height: auto;
+
+    h1 {
+      font-size: 15vw;
+      margin-top: 10vw;
+    }
+
+    h2 {
+      font-size: 5.5vw;
+    }
+
+    .slogan {
+      font-size: 2.8vw;
+    }
+
+    form.treat-form {
+      position: static;
+      display: flex;
+      flex-direction: row;
+
+      input {
+        width: auto;
+        flex-grow: 1;
+        margin-right: 5px;
+      }
+
+    }
+  }
+}
+
+@media (max-width: 590px){
+  .header {
+    nav {
+      #logo {
+        float: none;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      ul#menu {
+        float: none;
+        text-align: center;
+      }
+
+      h1 {}
+    }
+  }
+}
 
 .gray-button {
   color: #868484;
