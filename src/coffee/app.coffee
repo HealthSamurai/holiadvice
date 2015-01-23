@@ -1,6 +1,6 @@
 app = angular.module('holiadvice', ['formstamp'])
 app.controller('LandingCtrl', ['$scope', ($scope) ->
-  $scope.wizardStep = 1
+  $scope.wizardStep = 2
   $scope.wizardGoto = (i) ->
     $scope.wizardStep = i
 

@@ -49,13 +49,13 @@
     <div id="wizard" ng-if="wizardStep">
       <div class="shadow">
         <div class="popup" ng-switch="wizardStep">
-            <button type="button" class="close" aria-label="Close" ng-click="closeWizard()">
-              <span aria-hidden="true">&times;</span>
-            </button>
+          <button type="button" class="close" aria-label="Close" ng-click="closeWizard()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <h2>HoliAdvice</h2>
 
           <div class="step1" ng-switch-when="1">
-
-            <h2>HoliAdvice</h2>
             <p>
               We know how it is, sometimes you just can’t exactly say what's
               bothering you or there is too many experts. Who do I need to
@@ -115,7 +115,14 @@
           </div>
 
           <div class="step2" ng-switch-when="2">
-            Hello World
+            <img src="img/wizard-step2.jpg" alt="Wizard Step 2">
+            <h3>Reason of addressing</h3>
+            <div class="button-wrapper">
+              <button class="btn btn-info btn-lg">Body</button>
+              <button class="btn btn-info btn-lg">Mental</button>
+              <button class="btn btn-info btn-lg">Thoughts</button>
+              <button class="btn btn-info btn-lg">Spirit</button>
+            </div>
           </div>
 
           <div class="dots">
