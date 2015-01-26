@@ -37,23 +37,31 @@
       </nav>
 
       <nav class="secondary clearfix">
-        <div class="checked-and-approved pull-right">
-          Checked and approved
-          <!-- <img src="img/icon&#45;approved.png" alt="Checked and Approved"> -->
+        <div class="container">
+          <div class="row">
+            <div class="checked-and-approved pull-right">
+              Checked and approved
+              <!-- <img src="img/icon&#45;approved.png" alt="Checked and Approved"> -->
+            </div>
+            <ul id="secondary-menu" class="list-inline">
+              <li class="active">
+                <img src="img/flag-israel.png" alt="Israel">
+                <a href="">Dror Visser</a>
+              </li>
+              <li><a href="">Schedule treatment</a></li>
+              <li><a href="">Specialities</a></li>
+              <li><a href="">Set initial consultation</a></li>
+              <li><a href="">Patient Reviews</a></li>
+            </ul>
+
+          </div>
+
         </div>
-        <ul id="secondary-menu" class="list-inline">
-          <li class="active">
-            <img src="img/flag-israel.png" alt="Israel">
-            <a href="">Dror Visser</a>
-          </li>
-          <li><a href="">Schedule treatment</a></li>
-          <li><a href="">Specialities</a></li>
-          <li><a href="">Set initial consultation</a></li>
-          <li><a href="">Patient Reviews</a></li>
-        </ul>
       </nav>
     </div>
+    
     <div class="appointment-container">
+
       <div class="container">
 
         <div class="row">
@@ -87,6 +95,7 @@
               <fs-calendar ng-model="selectedDate"></fs-calendar>
               <a href="">Request to Book</a>
             </div>
+
             <div class="clinic-set-a-meeting">
               <a class="pull-right set-meeting-button" href="">Set a meeting</a>
               <h3>&quot;Before you tell the ‘truth’ to the patient, be sure 
@@ -98,10 +107,50 @@
                 Association of traditional Chinese acupuncture.
               </p>
             </div>
+
+            <ul class="clinic-menu list-inline">
+              <li><a href="">Resume</a></li>
+              <li><a href="">Certificates</a></li>
+              <li><a href="">My magazine</a></li>
+              <li><a href="">Contact me</a></li>
+              <li><a href=""><img src="img/icon-socials-dark.png"></a></li>
+              <li><a href=""><img src="img/icon-help.png"></a></li>
+            </ul>
           </div>
         </div>
 
       </div>
     </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <ul>
+              <li><a href="">Contact us</a></li>
+              <li><a href="">FAQ</a></li>
+              <li><a href="">Privacy policy</a></li>
+              <li><a href="">Join us</a></li>
+              <li><a href="">Premium</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <img src="img/icon-socials.png" width="214" height="52" alt="Social Icons" />
+          </div>
+        </div>
+
+        <div class="socials"></div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <p class="disclaimer">
+              Disclaimer: If you are in a life threatening situation, do NOT use this site. Call the National Suicide Prevention Lifeline, a free, 24-hour hotline, at 1.800.273.8255. Your call will be routed to the crisis center near you. If your issue is an emergency, call 911 or go to your nearest emergency room.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
   </body>
 </html>
