@@ -813,6 +813,83 @@ nav {
       }
     }
 
+    .calendar-part {
+      padding-top: 135px;
+      // padding-left: 75px;
+
+      .calendar {
+        text-align: center;
+
+        width: 310px;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        padding-top: 20px;
+        background-color: rgba(0, 0, 0, 0.3);
+
+        h3 {
+          margin-top: 0;
+          color: #fff;
+          font-size: 30px;
+          font-weight: normal;
+        }
+
+        a {
+          display: block;
+          font-size: 21px;
+          background: #67dcf9;
+          color: #fff;
+          padding: 10px;
+        }
+
+        .fs-calendar {
+          color: #fff;
+          .fs-calendar-header {
+            display: none;
+          }
+
+          table  {
+            border-spacing: 5px;
+            border-collapse: separate;
+          }
+
+          .day-in-selected-month {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.53);
+
+            &.day-current {
+              background: #67dcf9;
+            }
+          }
+        }
+      }
+
+      .clinic-set-a-meeting {
+        padding: 20px;
+        background: #fff;
+
+        .set-meeting-button {
+          color: #fff;
+          font-size: 12px;
+          font-weight: normal;
+          // line-height: 2.5;
+          background-color: #53d762;
+          padding: 10px;
+          margin-left: 35px;
+        }
+
+        h3 {
+          margin-top: 0;
+          font-size: 14px;
+          font-weight: normal;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: lighter;
+        }
+      }
+    }
+
   }
 }
 
