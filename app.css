@@ -598,10 +598,10 @@ nav ul#menu .avatar {
   display: inline-block;
   margin-bottom: 10px;
 }
-#appointment-page .header nav #logo {
+#appointment-page .header nav.primary #logo {
   background-image: url('img/logo-dark.png');
 }
-#appointment-page .header input.search {
+#appointment-page .header nav.primary input.search {
   background: url('img/icon-search.png') no-repeat center right;
   display: inline-block;
   width: 285px;
@@ -613,11 +613,44 @@ nav ul#menu .avatar {
   border: solid 2px #d2d2d2;
   color: #868484;
 }
-#appointment-page .header nav ul#menu li a {
+#appointment-page .header nav.primary ul#menu li a {
   color: #373737;
 }
-#appointment-page .header nav ul#menu li.list-as-a-therapist a {
+#appointment-page .header nav.primary ul#menu li.list-as-a-therapist a {
   color: #fff;
+}
+#appointment-page .header nav.secondary {
+  background-color: #373737;
+  color: #fff;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 20px;
+  padding: 2px 20px;
+}
+#appointment-page .header nav.secondary ul#secondary-menu {
+  line-height: 35px;
+  margin-bottom: 0;
+}
+#appointment-page .header nav.secondary ul#secondary-menu li a,
+#appointment-page .header nav.secondary ul#secondary-menu li a:hover,
+#appointment-page .header nav.secondary ul#secondary-menu li a:active {
+  color: #fff;
+  font-weight: lighter;
+}
+#appointment-page .header nav.secondary ul#secondary-menu li.active a {
+  padding-bottom: 8px;
+  border-bottom: #fff solid 5px;
+  font-weight: normal;
+}
+#appointment-page .header nav.secondary .checked-and-approved {
+  font-size: 8px;
+  font-weight: lighter;
+  text-align: center;
+  background: url('img/icon-approved.png') no-repeat center right;
+  padding-right: 27px;
+  height: 35px;
+  width: 90px;
+  padding-top: 8px;
 }
 @media (max-width: 590px) {
   #landing-page .header nav #logo {
