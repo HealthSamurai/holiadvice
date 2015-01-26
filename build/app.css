@@ -682,10 +682,6 @@ footer .disclaimer {
   background: #fff;
   padding-bottom: 15px;
 }
-#appointment-page .appointment-container .clinic-description > img {
-  margin-left: -15px;
-  margin-right: -15px;
-}
 #appointment-page .appointment-container .clinic-description .content {
   padding-left: 10px;
 }
@@ -844,6 +840,23 @@ footer .disclaimer {
     margin-right: auto;
   }
   #landing-page .header nav ul#menu {
+    float: none;
+    text-align: center;
+  }
+  #appointment-page .header nav.primary #logo {
+    float: none;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #appointment-page .header nav.primary input.search {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+  }
+  #appointment-page .header nav.primary ul#menu {
     float: none;
     text-align: center;
   }
