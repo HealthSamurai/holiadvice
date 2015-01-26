@@ -703,6 +703,68 @@ nav ul#menu .avatar {
 #appointment-page .appointment-container .clinic-description .talk-button img {
   display: inline-block;
 }
+#appointment-page .appointment-container .calendar-part {
+  padding-top: 135px;
+}
+#appointment-page .appointment-container .calendar-part .calendar {
+  text-align: center;
+  width: 310px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#appointment-page .appointment-container .calendar-part .calendar h3 {
+  margin-top: 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: normal;
+}
+#appointment-page .appointment-container .calendar-part .calendar a {
+  display: block;
+  font-size: 21px;
+  background: #67dcf9;
+  color: #fff;
+  padding: 10px;
+}
+#appointment-page .appointment-container .calendar-part .calendar .fs-calendar {
+  color: #fff;
+}
+#appointment-page .appointment-container .calendar-part .calendar .fs-calendar .fs-calendar-header {
+  display: none;
+}
+#appointment-page .appointment-container .calendar-part .calendar .fs-calendar table {
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+#appointment-page .appointment-container .calendar-part .calendar .fs-calendar .day-in-selected-month {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.53);
+}
+#appointment-page .appointment-container .calendar-part .calendar .fs-calendar .day-in-selected-month.day-current {
+  background: #67dcf9;
+}
+#appointment-page .appointment-container .calendar-part .clinic-set-a-meeting {
+  padding: 20px;
+  background: #fff;
+}
+#appointment-page .appointment-container .calendar-part .clinic-set-a-meeting .set-meeting-button {
+  color: #fff;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #53d762;
+  padding: 10px;
+  margin-left: 35px;
+}
+#appointment-page .appointment-container .calendar-part .clinic-set-a-meeting h3 {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: normal;
+}
+#appointment-page .appointment-container .calendar-part .clinic-set-a-meeting p {
+  font-size: 12px;
+  font-weight: lighter;
+}
 @media (max-width: 590px) {
   #landing-page .header nav #logo {
     float: none;
