@@ -621,9 +621,6 @@ footer .disclaimer {
   display: inline-block;
   margin-bottom: 10px;
 }
-#appointment-page .header nav.primary #logo {
-  background-image: url('img/logo-dark.png');
-}
 #appointment-page .header nav.primary input.search {
   background: url('img/icon-search.png') no-repeat center right;
   display: inline-block;
