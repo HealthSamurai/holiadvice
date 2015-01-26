@@ -678,33 +678,74 @@ nav {
 
 #appointment-page {
   .header {
-    nav #logo {
-      background-image: url('img/logo-dark.png');
-    }
-
-    input.search {
-      background: url('img/icon-search.png') no-repeat center right;
-      display: inline-block;
-      width: 285px;
-      margin-left: 20px;
-      margin-top: -2px;
-      padding: 6px 24px 6px 12px;
-      font-weight: lighter;
-      font-size: 12px;
-      border: solid 2px #d2d2d2;
-      color: #868484;
-    }
-
-    nav ul#menu {
-      li a {
-        color: #373737;
+    nav.primary {
+      #logo {
+        background-image: url('img/logo-dark.png');
       }
 
-      li.list-as-a-therapist a {
-        color: #fff;
+      input.search {
+        background: url('img/icon-search.png') no-repeat center right;
+        display: inline-block;
+        width: 285px;
+        margin-left: 20px;
+        margin-top: -2px;
+        padding: 6px 24px 6px 12px;
+        font-weight: lighter;
+        font-size: 12px;
+        border: solid 2px #d2d2d2;
+        color: #868484;
       }
 
-      li.help {
+      ul#menu {
+        li a {
+          color: #373737;
+        }
+
+        li.list-as-a-therapist a {
+          color: #fff;
+        }
+
+        li.help {
+        }
+      }
+    }
+
+    nav.secondary {
+      background-color: #373737;
+      color: #fff;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 20px;
+      padding: 2px 20px;
+
+      ul#secondary-menu {
+        line-height: 35px;
+        margin-bottom: 0;
+
+        li {
+          a, a:hover, a:active {
+            color: #fff;
+            font-weight: lighter;
+          }
+        }
+
+        li.active a {
+          padding-bottom: 8px;
+          border-bottom: #fff solid 5px;
+          font-weight: normal;
+        }
+
+      }
+
+      .checked-and-approved {
+        font-size: 8px;
+        font-weight: lighter;
+        text-align: center;
+        background: url('img/icon-approved.png') no-repeat center right;
+        padding-right: 27px;
+        height: 35px;
+        width: 90px;
+        padding-top: 8px;
       }
     }
   }
