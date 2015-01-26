@@ -831,6 +831,14 @@ footer .disclaimer {
 #appointment-page .reviews .review h2 {
   font-size: 30px;
 }
+#appointment-page footer.sub-footer {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #fff;
+}
+#appointment-page footer.sub-footer .container {
+  text-align: center;
+}
 @media (max-width: 590px) {
   #landing-page .header nav #logo {
     float: none;
