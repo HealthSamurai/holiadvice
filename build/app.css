@@ -18,65 +18,107 @@ body {
   margin: 0;
   font-weight: normal;
 }
-.header {
+nav {
+  margin: 32px 20px 0 20px;
+}
+nav #logo {
+  background-image: url('img/logo.png');
+  width: 223px;
+  height: 23px;
+  float: left;
+}
+nav ul#menu {
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+nav ul#menu li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+nav ul#menu li:last-child {
+  margin-right: 0;
+}
+nav ul#menu li a {
+  color: #fff;
+}
+nav ul#menu li a:hover {
+  color: #fff;
+}
+nav ul#menu li.list-as-a-therapist a {
+  background-color: #fa6767;
+  padding: 5px;
+  font-size: 90%;
+}
+nav ul#menu .avatar {
+  border: 2px solid #fff;
+}
+.gray-button {
+  color: #868484;
+  border-radius: 0;
+  border: solid 4px #868484;
+  font-size: 18px;
+}
+#landing-page .header {
   position: relative;
   background: url('img/header-background.jpg') #294536 no-repeat;
   background-position: center bottom;
   background-size: 100%;
   height: 588px;
 }
-.header nav {
+#landing-page .header nav {
   margin: 32px 20px 0 20px;
 }
-.header nav #logo {
+#landing-page .header nav #logo {
   background-image: url('img/logo.png');
   width: 223px;
   height: 23px;
   float: left;
 }
-.header nav ul#menu {
+#landing-page .header nav ul#menu {
   margin: 0;
   padding: 0;
   float: right;
 }
-.header nav ul#menu li {
+#landing-page .header nav ul#menu li {
   list-style-type: none;
   display: inline-block;
   margin-right: 10px;
 }
-.header nav ul#menu li:last-child {
+#landing-page .header nav ul#menu li:last-child {
   margin-right: 0;
 }
-.header nav ul#menu li a {
+#landing-page .header nav ul#menu li a {
   color: #fff;
 }
-.header nav ul#menu li a:hover {
+#landing-page .header nav ul#menu li a:hover {
   color: #fff;
 }
-.header nav ul#menu li.list-as-a-therapist a {
+#landing-page .header nav ul#menu li.list-as-a-therapist a {
   background-color: #fa6767;
   padding: 5px;
   font-size: 90%;
 }
-.header nav ul#menu .avatar {
+#landing-page .header nav ul#menu .avatar {
   border: 2px solid #fff;
 }
-.header h1,
-.header h2 {
+#landing-page .header h1,
+#landing-page .header h2 {
   text-align: center;
   color: #fff;
   font-weight: normal;
 }
-.header h1 {
+#landing-page .header h1 {
   font-size: 120px;
   margin-top: 90px;
   margin-bottom: 0;
 }
-.header h2 {
+#landing-page .header h2 {
   font-size: 44px;
   margin-top: 6px;
 }
-.header .slogan {
+#landing-page .header .slogan {
   margin: 0 auto;
   margin-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -87,7 +129,7 @@ body {
   font-size: 21px;
   text-align: center;
 }
-.header form.treat-form {
+#landing-page .header form.treat-form {
   background-color: rgba(0, 0, 0, 0.3);
   padding: 30px;
   position: absolute;
@@ -96,18 +138,12 @@ body {
   right: 0;
   text-align: center;
 }
-.header form.treat-form input,
-.header form.treat-form button {
+#landing-page .header form.treat-form input,
+#landing-page .header form.treat-form button {
   border-radius: 0;
 }
-.header form.treat-form input {
+#landing-page .header form.treat-form input {
   width: 415px;
-}
-.gray-button {
-  color: #868484;
-  border-radius: 0;
-  border: solid 4px #868484;
-  font-size: 18px;
 }
 #landing-page .after-header {
   margin-top: 30px;
@@ -562,33 +598,54 @@ body {
   display: inline-block;
   margin-bottom: 10px;
 }
+#appointment-page .header nav #logo {
+  background-image: url('img/logo-dark.png');
+}
+#appointment-page .header input.search {
+  background: url('img/icon-search.png') no-repeat center right;
+  display: inline-block;
+  width: 285px;
+  margin-left: 20px;
+  margin-top: -2px;
+  padding: 6px 24px 6px 12px;
+  font-weight: lighter;
+  font-size: 12px;
+  border: solid 2px #d2d2d2;
+  color: #868484;
+}
+#appointment-page .header nav ul#menu li a {
+  color: #373737;
+}
+#appointment-page .header nav ul#menu li.list-as-a-therapist a {
+  color: #fff;
+}
 @media (max-width: 590px) {
-  .header nav #logo {
+  #landing-page .header nav #logo {
     float: none;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
   }
-  .header nav ul#menu {
+  #landing-page .header nav ul#menu {
     float: none;
     text-align: center;
   }
 }
 @media (max-width: 768px) {
-  .header {
+  #landing-page .header {
     height: auto;
   }
-  .header h1 {
+  #landing-page .header h1 {
     font-size: 15vw;
     margin-top: 10vw;
   }
-  .header h2 {
+  #landing-page .header h2 {
     font-size: 5.5vw;
   }
-  .header .slogan {
+  #landing-page .header .slogan {
     font-size: 2.8vw;
   }
-  .header form.treat-form {
+  #landing-page .header form.treat-form {
     position: static;
     display: -webkit-box;
     display: -webkit-flex;
@@ -600,7 +657,7 @@ body {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .header form.treat-form input {
+  #landing-page .header form.treat-form input {
     width: auto;
     -webkit-box-flex: 1;
     -webkit-flex-grow: 1;
