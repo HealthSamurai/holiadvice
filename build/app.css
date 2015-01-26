@@ -860,6 +860,20 @@ footer .disclaimer {
     float: none;
     text-align: center;
   }
+  #appointment-page .header nav.secondary {
+    padding-top: 15px;
+    position: relative;
+  }
+  #appointment-page .header nav.secondary .checked-and-approved {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  #appointment-page .header nav.secondary ul#secondary-menu li {
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+  }
 }
 @media (max-width: 768px) {
   #landing-page .header {
