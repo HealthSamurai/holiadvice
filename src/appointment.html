@@ -68,7 +68,7 @@
       </nav>
     </div>
 
-    <div id="chat" ng-if="showChat">
+    <div id="chat" ng-show="showChat">
       <div class="shadow">
         <div class="chat-window">
 
@@ -268,7 +268,7 @@
             </div>
 
             <div class="clinic-set-a-meeting">
-              <a class="pull-right set-meeting-button" href="">Set a meeting</a>
+              <a class="pull-right set-meeting-button" ng-click="startChat()" href="">Set a meeting</a>
               <h3>&quot;Before you tell the ‘truth’ to the patient, be sure 
                 you know the ‘truth’ and that the patient wants to hear it&quot;</h3>
               <p>My name is Visser, I’m 41 years old, a father of oak, Abigail

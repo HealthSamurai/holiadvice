@@ -22,7 +22,13 @@
 
   app.controller('AppointmentCtrl', [
     '$scope', function($scope) {
-      return $scope.showChat = true;
+      $scope.showChat = false;
+      $scope.startChat = function() {
+        return $scope.showChat = true;
+      };
+      return $scope.stopChat = function() {
+        return $scope.showChat = false;
+      };
     }
   ]);
 

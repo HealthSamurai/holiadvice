@@ -16,5 +16,11 @@ app.controller('LandingCtrl', ['$scope', ($scope) ->
 ])
 
 app.controller('AppointmentCtrl', ['$scope', ($scope) ->
-  $scope.showChat = true;
+  $scope.showChat = false
+
+  $scope.startChat = () ->
+    $scope.showChat = true
+
+  $scope.stopChat = () ->
+    $scope.showChat = false
 ])
