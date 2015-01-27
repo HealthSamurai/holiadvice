@@ -698,20 +698,20 @@ footer .disclaimer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#appointment-page #chat .chat-controls {
+#appointment-page #chat .chat-window {
   position: absolute;
   left: 10px;
-  top: 200px;
+  top: 100px;
   width: 170px;
   height: 390px;
 }
-#appointment-page #chat .chat-controls header {
+#appointment-page #chat .chat-window header {
   background: #373737;
   height: 35px;
   padding: 10px;
   border-radius: 5px 5px 0 0;
 }
-#appointment-page #chat .chat-controls header .logo {
+#appointment-page #chat .chat-window header .logo {
   display: inline-block;
   background: url(img/logo.png) no-repeat;
   width: 110px;
@@ -719,7 +719,7 @@ footer .disclaimer {
   margin-right: 10px;
   background-size: 100%;
 }
-#appointment-page #chat .chat-controls header .cam {
+#appointment-page #chat .chat-window header .cam {
   display: inline-block;
   background: url(img/icon-cam.png) no-repeat;
   width: 22px;
@@ -727,39 +727,75 @@ footer .disclaimer {
   vertical-align: top;
   margin-top: 2px;
 }
-#appointment-page #chat .chat-controls .body {
+#appointment-page #chat .chat-window .body {
   background: #fff;
   height: 355px;
   border-radius: 0 0 5px 5px;
   padding: 5px;
 }
-#appointment-page #chat .chat-controls .body .name {
+#appointment-page #chat .chat-window .body .name {
   font-weight: normal;
   font-size: 13px;
 }
-#appointment-page #chat .chat-controls .body .icon-add-person {
+#appointment-page #chat .chat-window .body .icon-add-person {
   display: inline-block;
   vertical-align: bottom;
   background: url(img/icon-add-person.png) no-repeat;
   width: 16px;
   height: 17px;
 }
-#appointment-page #chat .chat-controls .body .icon-attach {
+#appointment-page #chat .chat-window .body .icon-attach {
   display: inline-block;
   vertical-align: bottom;
   background: url(img/icon-attach.png) no-repeat;
   width: 15px;
   height: 15px;
 }
-#appointment-page #chat .chat-controls .body .icon-options {
+#appointment-page #chat .chat-window .body .icon-options {
   display: inline-block;
   vertical-align: bottom;
   background: url(img/icon-options.png) no-repeat;
   width: 16px;
   height: 15px;
 }
-#appointment-page #chat .chat-controls .body .chat-row {
+#appointment-page #chat .chat-window .body .chat-row {
   padding-bottom: 10px;
+}
+#appointment-page #chat .chat-window .panel-group {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#appointment-page #chat .chat-window .panel-group .panel {
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+  margin-top: 1px;
+}
+#appointment-page #chat .chat-window .panel-group .panel .panel-heading {
+  border-radius: 0;
+  border: none;
+  padding: 5px 25px;
+}
+#appointment-page #chat .chat-window .panel-group .panel .panel-heading h4 {
+  font-size: 12px;
+  font-weight: normal;
+}
+#appointment-page #chat .chat-window .panel-group .panel .panel-collapse .panel-body {
+  border-top: none;
+  padding: 5px 25px;
+}
+#appointment-page #chat .chat-window .panel-group .panel .panel-collapse .panel-body ul {
+  font-size: 10px;
+  font-weight: lighter;
+  margin-bottom: 0;
+}
+#appointment-page #chat .chat-window .chat-wrapper {
+  padding: 5px;
+  height: 65px;
+}
+#appointment-page #chat .chat-window .chat-wrapper #chatInput {
+  width: 100%;
+  height: 100%;
 }
 #appointment-page #chat .popup {
   background: #fff;
