@@ -700,17 +700,19 @@ footer .disclaimer {
 }
 #appointment-page #chat .chat-window {
   position: absolute;
-  top: 100px;
+  bottom: 50px;
   left: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  z-index: 100;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+  box-shadow: 1px 1px 11px 0px rgba(50, 50, 50, 0.59);
 }
 #appointment-page #chat .chat-window header {
   background: #373737;
@@ -828,9 +830,14 @@ footer .disclaimer {
 }
 #appointment-page #chat .popup {
   background: #fff;
-  height: 440px;
+  height: 500px;
   padding: 30px;
   position: relative;
+}
+#appointment-page #chat .popup .images video#my-video,
+#appointment-page #chat .popup .images video#their-video {
+  width: 513px;
+  height: 443px;
 }
 #appointment-page .appointment-container {
   background: url('img/bg-appointment.jpg') no-repeat;
