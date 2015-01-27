@@ -8,12 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.10/angular.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="formstamp.js" type="text/javascript"></script>
     <script src="app.js" type="text/javascript"></script>
     <link rel="stylesheet" href="formstamp.css" />
     <link rel="stylesheet" href="app.css" />
   </head>
-  <body id="appointment-page">
+
+  <body id="appointment-page" ng-controller="AppointmentCtrl">
     <div class="header clearfix">
       <nav class="primary clearfix">
         <div id="logo">
@@ -62,6 +65,111 @@
 
         </div>
       </nav>
+    </div>
+
+    <div id="chat" ng-if="showChat">
+      <div class="shadow">
+        <div class="chat-controls">
+          <header>
+            <div class="logo"></div>
+            <div class="cam"></div>
+          </header>
+          <div class="body">
+            <div class="chat-row clearfix">
+              <div class="pull-left">
+                <a class="icon-add-person" href=""></a>
+                <span class="name">Ann Klein</span>
+              </div>
+              <div class="pull-right">
+                <a class="icon-attach" href=""></a>
+                <a class="icon-options" href=""></a>
+              </div>
+            </div>
+            <div class="chat-row">
+              <div class="panel-group" id="accordion">
+
+                <div class="panel panel-default">
+                  <div id="headingOne" class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="accordion" href="#collapseOne">Important</a>
+                    </h4>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      <ul>
+                        <li>Diabetes</li>
+                        <li>hearth disease (Father)</li>
+                        <li>former smoker</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div id="headingTwo" class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="accordion" href="#collapseTwo">Conditions</a>
+                    </h4>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      Text
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div id="headingThree" class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="accordion" href="#collapseThree">Files</a>
+                    </h4>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      Text
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div id="headingFour" class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="accordion" href="#collapseFour">Fitness</a>
+                    </h4>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      Text
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                  <div id="headingFive" class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="accordion" href="#collapseFive">Health History</a>
+                    </h4>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      Text
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="popup">
+          <div class="images">
+            <img src="img/chat-man.jpg">
+            <img src="img/chat-woman.jpg">
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <div class="appointment-container">

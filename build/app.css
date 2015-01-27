@@ -677,6 +677,96 @@ footer .disclaimer {
   width: 90px;
   padding-top: 8px;
 }
+#appointment-page #chat .shadow {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 100;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#appointment-page #chat .chat-controls {
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  width: 170px;
+  height: 390px;
+}
+#appointment-page #chat .chat-controls header {
+  background: #373737;
+  height: 35px;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+#appointment-page #chat .chat-controls header .logo {
+  display: inline-block;
+  background: url(img/logo.png) no-repeat;
+  width: 110px;
+  height: 15px;
+  margin-right: 10px;
+  background-size: 100%;
+}
+#appointment-page #chat .chat-controls header .cam {
+  display: inline-block;
+  background: url(img/icon-cam.png) no-repeat;
+  width: 22px;
+  height: 10px;
+  vertical-align: top;
+  margin-top: 2px;
+}
+#appointment-page #chat .chat-controls .body {
+  background: #fff;
+  height: 355px;
+  border-radius: 0 0 5px 5px;
+  padding: 5px;
+}
+#appointment-page #chat .chat-controls .body .name {
+  font-weight: normal;
+  font-size: 13px;
+}
+#appointment-page #chat .chat-controls .body .icon-add-person {
+  display: inline-block;
+  vertical-align: bottom;
+  background: url(img/icon-add-person.png) no-repeat;
+  width: 16px;
+  height: 17px;
+}
+#appointment-page #chat .chat-controls .body .icon-attach {
+  display: inline-block;
+  vertical-align: bottom;
+  background: url(img/icon-attach.png) no-repeat;
+  width: 15px;
+  height: 15px;
+}
+#appointment-page #chat .chat-controls .body .icon-options {
+  display: inline-block;
+  vertical-align: bottom;
+  background: url(img/icon-options.png) no-repeat;
+  width: 16px;
+  height: 15px;
+}
+#appointment-page #chat .chat-controls .body .chat-row {
+  padding-bottom: 10px;
+}
+#appointment-page #chat .popup {
+  background: #fff;
+  height: 440px;
+  padding: 30px;
+  position: relative;
+}
 #appointment-page .appointment-container {
   background: url('img/bg-appointment.jpg') no-repeat;
   background-size: 100%;

@@ -20,4 +20,10 @@
     }
   ]);
 
+  app.controller('AppointmentCtrl', [
+    '$scope', function($scope) {
+      return $scope.showChat = true;
+    }
+  ]);
+
 }).call(this);

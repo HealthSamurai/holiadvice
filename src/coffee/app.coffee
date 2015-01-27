@@ -14,3 +14,7 @@ app.controller('LandingCtrl', ['$scope', ($scope) ->
   $scope.professions = ['IT Consultant', 'Medical Doctor', 'Grass Cutter']
   $scope.famstatuses = ['Single', 'Divorced', 'Married']
 ])
+
+app.controller('AppointmentCtrl', ['$scope', ($scope) ->
+  $scope.showChat = true;
+])

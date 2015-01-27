@@ -778,6 +778,108 @@ footer {
 
   }
 
+  #chat {
+    .shadow {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .chat-controls {
+      position: absolute;
+      left: 10px;
+      top: 200px;
+      width: 170px;
+      height: 390px;
+
+      header {
+        background: #373737;
+        height: 35px;
+        padding: 10px;
+        border-radius: 5px 5px 0 0;
+
+        .logo {
+          display: inline-block;
+          background: url(img/logo.png) no-repeat;
+          width: 110px;
+          height: 15px;
+          margin-right: 10px;
+          background-size: 100%;
+        }
+
+        .cam {
+          display: inline-block;
+          background: url(img/icon-cam.png) no-repeat;
+          width: 22px;
+          height: 10px;
+          vertical-align: top;
+          margin-top: 2px;
+        }
+      }
+
+      .body {
+        background: #fff;
+        height: 355px;
+        border-radius: 0 0 5px 5px;
+        padding: 5px;
+        
+        .name {
+          font-weight: normal;
+          font-size: 13px;
+
+        }
+
+        .icon-add-person {
+          display: inline-block;
+          vertical-align: bottom;
+          background: url(img/icon-add-person.png) no-repeat;
+          width: 16px;
+          height: 17px;
+        }
+        .icon-attach {
+          display: inline-block;
+          vertical-align: bottom;
+          background: url(img/icon-attach.png) no-repeat;
+          width: 15px;
+          height: 15px;
+        }
+        .icon-options {
+          display: inline-block;
+          vertical-align: bottom;
+          background: url(img/icon-options.png) no-repeat;
+          width: 16px;
+          height: 15px;
+        }
+        .chat-row {
+          padding-bottom: 10px;
+        }
+      }
+
+      .panel-group {
+        .panel {
+          .panel-heading {
+          }
+        }
+      }
+    }
+
+    .popup {
+      background: #fff;
+      // width: 770px;
+      height: 440px;
+      padding: 30px;
+      position: relative;
+
+    }
+  }
+
   .appointment-container {
     background: url('img/bg-appointment.jpg') no-repeat;
     background-size: 100%;
