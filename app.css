@@ -700,9 +700,8 @@ footer .disclaimer {
 }
 #appointment-page #chat .chat-window {
   position: absolute;
-  left: 10px;
   top: 100px;
-  width: 170px;
+  left: 10px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -780,6 +779,7 @@ footer .disclaimer {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  overflow: auto;
 }
 #appointment-page #chat .chat-window .body .chat-row {
   padding-bottom: 10px;
