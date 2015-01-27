@@ -70,25 +70,24 @@
     <div id="chat" ng-if="showChat">
       <div class="shadow">
         <div class="chat-window">
+
           <header>
             <div class="logo"></div>
             <div class="cam"></div>
           </header>
-          <!-- <div class="chat&#45;top"></div> -->
-          <!-- <div class="body"></div> -->
-          <!-- <div class="chat&#45;input"></div> -->
+
+          <div class="chat-top">
+            <div class="pull-left">
+              <a class="icon-add-person" href=""></a>
+              <span class="name">Ann Klein</span>
+            </div>
+            <div class="pull-right">
+              <a class="icon-attach" href=""></a>
+              <a class="icon-options" href=""></a>
+            </div>
+          </div>
 
           <div class="body">
-            <div class="chat-row clearfix">
-              <div class="pull-left">
-                <a class="icon-add-person" href=""></a>
-                <span class="name">Ann Klein</span>
-              </div>
-              <div class="pull-right">
-                <a class="icon-attach" href=""></a>
-                <a class="icon-options" href=""></a>
-              </div>
-            </div>
             <div class="chat-row">
               <div class="panel-group" id="accordion">
 
@@ -199,13 +198,15 @@
                     </div>
                   </div>
                 </div>
-                <div class="chat-wrapper">
-                  <textarea id="chatInput" name="chat-input" cols="10" rows="3" class="form-control"></textarea>
-                </div>
 
               </div>
             </div>
           </div>
+
+          <div class="chat-input">
+            <textarea id="chatInput" name="chat-input" cols="10" rows="3" class="form-control"></textarea>
+          </div>
+
         </div>
 
         <div class="popup">
