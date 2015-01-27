@@ -271,6 +271,7 @@ footer .disclaimer {
   font-size: 30px;
   display: table;
   width: 100%;
+  text-decoration: none;
 }
 #landing-page .gallery .gallery-picture span {
   display: table-cell;
@@ -408,7 +409,6 @@ footer .disclaimer {
   background: transparent url('img/girl-with-ipad.png') no-repeat;
   background-size: 100%;
   height: 200px;
-  color: #fff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -422,11 +422,16 @@ footer .disclaimer {
       -ms-flex-pack: center;
           justify-content: center;
 }
-#landing-page .community .guide-me span {
+#landing-page .community .guide-me a,
+#landing-page .community .guide-me a:hover,
+#landing-page .community .guide-me a:visited {
+  color: #fff;
+  display: block;
   padding: 40px;
   text-align: center;
   line-height: 1.5;
   font-size: 18px;
+  text-decoration: none;
 }
 #landing-page .community .mh,
 #landing-page .community .ph {
