@@ -271,7 +271,7 @@ footer .disclaimer {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
-  height: 188px;
+  height: 19vw;
   color: #fff;
   font-size: 30px;
   display: table;
@@ -337,7 +337,7 @@ footer .disclaimer {
   background-position: center left, center right;
 }
 #landing-page .specialists .row > div {
-  height: 201px;
+  height: 22vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -364,7 +364,7 @@ footer .disclaimer {
 }
 #landing-page .specialists .doc {
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 #landing-page .specialists div.video {
   background: #a14a2e url('img/video.png') no-repeat;
@@ -413,7 +413,7 @@ footer .disclaimer {
 #landing-page .community .guide-me {
   background: transparent url('img/girl-with-ipad.png') no-repeat;
   background-size: 100%;
-  height: 200px;
+  height: 21vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -458,7 +458,7 @@ footer .disclaimer {
 #landing-page .community .quote .cite,
 #landing-page .community .quote .author {
   width: 50%;
-  height: 200px;
+  height: 21vw;
 }
 #landing-page .community .quote .cite {
   float: left;
@@ -501,7 +501,7 @@ footer .disclaimer {
   float: right;
 }
 #landing-page .community .consult .girl {
-  height: 200px;
+  height: 21vw;
   background: url('img/girl-with-notebook.png') no-repeat center center;
   background-size: 100%;
 }
